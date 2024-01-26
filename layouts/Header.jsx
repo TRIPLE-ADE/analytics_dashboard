@@ -3,7 +3,7 @@ import SearchInput from "@/components/SearchInput";
 
 const Header = () => {
     return (
-        <header className="fixed top-0 left-0 flex items-center justify-between py-[18px] px-5 w-full bg-neutral-50">
+        <header className="fixed top-0 right-0 flex items-center justify-between py-[18px] px-5 w-[calc(100%-5rem)] bg-neutral-50 border-b border-b-slate-200">
             <h1 className="text-xl font-semibold leading-7 text-zinc-800">
                 Dashboard
             </h1>

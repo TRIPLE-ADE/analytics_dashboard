@@ -28,3 +28,40 @@ html{
   100% { transform: rotate(360deg); }
 }
 
+.nav-item::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #0D062D;
+  transition: all 0.3s ease-in-out;
+}
+
+.label::before{
+  content: "";
+  background-color: #34CAA5 ;
+  width: 30px;
+  height: 30px;
+  padding: 6.5px 7.5px;
+  margin:0 auto;
+  inset: 0;
+  top: 10px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+input:checked + .label::before{
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+}
+
+.label, .label::before{
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: pointer;
+}
