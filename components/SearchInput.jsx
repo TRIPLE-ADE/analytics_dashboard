@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SearchInput = () => {
     return (
-        <div className="relative md:w-[349px]">
+        <div className="relative w-full md:w-[349px]">
             <input
                 type="search"
                 name="search"

@@ -4,14 +4,14 @@ import Image from "next/image";
 
 const LastOrders = () => {
     return (
-        <div className="w-[806px] bg-white rounded-[14px] border border-slate-100  px-5 pt-[18px] pb-[31px]">
+        <div className="bg-white rounded-[14px] border border-slate-100  px-5 pt-[18px] pb-[31px] transition-all hover:shadow lg:w-[62.2%]">
             <div className="flex items-center justify-between mb-[14px]">
                 <h5 className="text-lg font-semibold leading-relaxed text-zinc-800">Last Orders</h5>
                 <Link href="/" className="text-lg font-medium leading-relaxed text-center text-emerald-400">See All</Link>
             </div>
             <table className="w-full divide-y divide-slate-100">
                 <thead>
-                    <tr class="text-left text-gray-400 text-base font-medium leading-normal">
+                    <tr className="text-base font-medium leading-normal text-left text-gray-400">
                         <th className="pb-5 ">Name</th>
                         <th className="pb-5 ">Date</th>
                         <th className="pb-5 ">Amount</th>

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const Profile = () => {
   return (
-    <div className="flex items-center gap-5">
-      <div className="w-[253px] gap-5  flex items-center">
+    <div className="flex flex-col items-center justify-start gap-5 md:flex-row">
+      <div className="w-[253px] gap-5  lg:flex items-center hidden">
         <div className="flex items-center justify-between gap-[10px] px-4 pr-0 py-3">
           <Image
             src="/assets/icons/solar_calendar.svg"
@@ -24,7 +24,7 @@ const Profile = () => {
           />
         </div>
       </div>
-      <div className="w-[215px] h-[52px] px-2 py-1.5 rounded-[28px] border border-zinc-300 justify-between items-center gap-2 flex">
+      <div className="md:w-[215px] w-full h-[52px] px-2 py-1.5 rounded-[28px] border border-zinc-300 justify-between items-center gap-2 flex">
         <Image
           src="/assets/images/profile.png"
           alt="profile"

@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const Sidebar = () => {
     return (
-        <div className='fixed flex flex-col items-center w-20 h-full min-h-screen py-5 border-r bg-gray-50 border-r-slate-200'>
+        <div className='fixed z-50 flex-col items-center hidden w-20 h-full min-h-screen py-5 border-r md:flex h bg-gray-50 border-r-slate-200'>
             <Image
                 src="/assets/icons/logo.svg"
                 alt="Calender"
@@ -12,7 +12,7 @@ const Sidebar = () => {
                 height={40}
                 className="mx-auto"
             />
-            <nav className="w-full mb-20">
+            <nav className="w-full mb-10">
                 <ul className="flex flex-col mt-[30px] gap-9">
                     <li>
                         <Link href="/" className="relative nav-item">
